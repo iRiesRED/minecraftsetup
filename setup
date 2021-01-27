@@ -15,5 +15,9 @@ wget -O ngrok.zip https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-2.2.8-linux-arm64.z
 unzip ngrok.zip
 printf "cd mc\njava -Xmx2G -jar minecraft_server.jar nogui" > m
 printf "cd ngrok\n./ngrok tcp -region=ap 25565" > n
+printf "mv ubuntu-fs/root/mc/Survival storage/downloads/" > r
+printf "mv storage/downloads/Survival ubuntu-fs/root/mc/" > t
 chmod +x m
 chmod +x n
+chmod +x r
+chmod +x t
