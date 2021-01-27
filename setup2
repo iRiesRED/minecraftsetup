@@ -1,3 +1,4 @@
+#!/bin/bash
 mkdir mc
 cd mc
 wget -O minecraft_server.jar https://papermc.io/api/v2/projects/paper/versions/1.16.4/builds/416/downloads/paper-1.16.4-416.jar
