@@ -1,7 +1,7 @@
 #!/bin/bash
 mkdir mc
 cd mc
-wget -O minecraft_server.jar https://papermc.io/api/v2/projects/paper/versions/1.16.4/builds/416/downloads/paper-1.16.4-416.jar
+wget -O minecraft_server.jar https://papermc.io/api/v2/projects/paper/versions/1.17.1/builds/90/downloads/paper-1.17.1-90.jar
 echo "eula=true" > eula.txt
 echo online-mode=false > server.properties
 echo level-name=Survival > server.properties
