@@ -1,0 +1,15 @@
+#!/bin/bash
+mkdir mc
+cd mc
+wget -O minecraft_server.jar https://papermc.io/api/v2/projects/paper/versions/1.17.1/builds/90/downloads/paper-1.17.1-90.jar
+echo "eula=true" > eula.txt
+echo online-mode=false > server.properties
+echo level-name=Survival > server.properties
+echo view-distance=8 > server.properties
+cd ..
+wget -O ngrok.zip https://bin.equinox.io/a/nmkK3DkqZEB/ngrok-2.2.8-linux-arm64.zip
+unzip ngrok.zip
+printf "cd mc\njava -Xmx3G -jar minecraft_server.jar nogui" > m
+printf "cd ngrok\n./ngrok tcp -region=ap 25565" > n
+chmod +x m
+chmod +x n
